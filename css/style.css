@@ -4,7 +4,8 @@
   margin: 0;
 }
 
-html, body {
+html,
+body {
   height: 100%;
 }
 
@@ -146,7 +147,7 @@ body {
     max-width: 1440px;
   }
   .ilustration {
-    min-width: 50Vw;
+    min-width: 50vw;
     min-height: 50vh;
   }
   .main {
