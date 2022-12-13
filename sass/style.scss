@@ -5,6 +5,7 @@
 	padding: 0;
 	margin: 0;
 }
+
 html,
 body {
 	height: 100%;
@@ -15,6 +16,14 @@ body {
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
+}
+
+input,
+textarea,
+button,
+select,
+a {
+	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
 .top_image {
@@ -87,13 +96,12 @@ body {
 		color: colors.$Violet;
 		font-weight: 600;
 		border-radius: 20px;
-		cursor: pointer;
-		-webkit-user-select: none;
-		user-select: none;
+		outline: none;
 		transition: background-color 0.3s, color 0.3s;
 		&:hover {
 			color: #fff;
 			background-color: colors.$Soft_Magenta;
+			cursor: pointer;
 		}
 	}
 }
@@ -126,6 +134,7 @@ body {
 		&:hover {
 			color: colors.$Soft_Magenta;
 			border: 1px solid colors.$Soft_Magenta;
+			cursor: pointer;
 		}
 	}
 }
@@ -166,6 +175,9 @@ body {
 		text-align: left;
 		&-info {
 			font-weight: 400;
+		}
+		& button {
+			cursor: default;
 		}
 	}
 	.media {
